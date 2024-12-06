@@ -1,0 +1,33 @@
+.header { grid-area: header; }
+.flexbox-container { grid-area: flexbox-container; }
+.sidebar {grid-area: sidebar}
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'sidebar main main main main'
+    'footer footer footer footer footer';
+  gap: 10px;
+  background-color: #feffea;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(145, 235, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.flexbox-container {
+display:flex;
+flex-wrap:wrap;
+}
+
+.flexbox-container > div {
+    background-color: rgba(255, 244, 145, 0.888);
+    flex:1
+}
+

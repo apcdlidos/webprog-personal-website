@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Personal Website</title>
+    <title>Flexbox/Grid</title>
+<link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
   </head>
   <body>
-    <h1>Home</h1>
-    <p>Personal website</p>
-    <h2>About Me</h2>
-    <p>
-      Welcome to my personal profile page. I am Don Victor Idos and here, you will find information about
-      my education, achievements, IT experience, hobbies, interests, and goals
-      in life.
-    </p>
-
+    <div class="grid-container">
+  <header class="header">
+   <h1>Personal Web Page</h1> 
+    </header>
+  <div class="sidebar"></div>
+  <main class="flexbox-container">
+    
     <h2>Education / Achievements</h2>
     <ul>
       <li>Graduated Highschool</li>
@@ -31,25 +30,15 @@
     </p>
 
     <h2>Hobbies & Interests</h2>
-    <table>
-      <tr>
-        <th>Hobby/Interest</th>
-      </tr>
-      <tr>
-        <td>Sports</td>
-      </tr>
-      <tr>
-        <td>Programming</td>
-      </tr>
-      <tr>
-        <td>Art</td>
-      </tr>
-    </table>
-
+        <span>Hobby/Interest</span>
+        <span>Sports</span>
+        <span>Programming</span>
+        <span>Art</span>
     <h2>Goals In Life / Dream</h2>
     <p>I want to be happy</p>
+  </main>  
+  <div class="footer">Footer</div>
+</div>
 
-    <h2>Picture Gallery</h2>
-    <img src="./personal_image.jpg" alt="My Personal Photo" />
   </body>
 </html>
