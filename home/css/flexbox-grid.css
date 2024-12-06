@@ -7,7 +7,7 @@
   display: grid;
   grid-template-areas:
     'header header header header header'
-    'sidebar main main main main'
+    'sidebar flexbox-container flexbox-container flexbox-container flexbox-container'
     'footer footer footer footer footer';
   gap: 10px;
   background-color: #feffea;
