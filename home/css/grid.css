@@ -12,12 +12,16 @@
     'menu footer footer footer footer footer';
   gap: 10px;
   background-color: #feffea;
+  border: solid 1px black;
+  color: black;
   padding: 10px;
 }
 
 .grid-container > div {
   background-color: rgba(145, 235, 255, 0.8);
+  border: solid 1px black;
   text-align: center;
+  color: red;
   padding: 20px 0;
   font-size: 30px;
 }
