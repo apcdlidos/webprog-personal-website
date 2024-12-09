@@ -11,23 +11,27 @@
     'footer footer footer footer footer';
   gap: 10px;
   background-color: #feffea;
+  border: 1px solid black;
   padding: 10px;
 }
 
 .grid-container > div {
   background-color: rgba(145, 235, 255, 0.8);
   text-align: center;
+  border: 1px solid black;
   padding: 20px 0;
   font-size: 30px;
 }
 
 .flexbox-container {
 display:flex;
+background: green;
 flex-direction:column;
 }
 
 .flexbox-container > div {
     background-color: rgba(255, 244, 145, 0.888);
+    color: black;
     flex:1
 }
 
