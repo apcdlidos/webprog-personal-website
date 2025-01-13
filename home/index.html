@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="/" class="vyd"
+          >vy<span class="prm-accent">D</span>
+          <span class="link-line"
+            ><img
+              src="assets/graphics/underline-1.svg"
+              alt="Underline Graphics"
+          /></span>
+        </a>
+        <span class="nav-links">
+          <a class="nav-link" href="/#gallery"
+            ><span><span class="prm-accent">G</span>allery</span
+            ><span class="link-line"
+              ><img
+                src="assets/graphics/underline-1.svg"
+                alt="Underline Graphics" /></span
+          ></a>
+          <a class="nav-link" href="/#contact"
+            ><span><span class="prm-accent">C</span>ontact</span
+            ><span class="link-line"
+              ><img
+                src="assets/graphics/underline-1.svg"
+                alt="Underline Graphics" /></span
+          ></a>
+
+          <a class="nav-link" href="/resources.html"
+            ><span><span class="prm-accent">R</span>esources</span
+            ><span class="link-line"
+              ><img
+                src="assets/graphics/underline-1.svg"
+                alt="Underline Graphics" /></span
+          ></a>
+        </span>
+      </div>
+    </header>
+    <main>
+      <div id="hero">
+        <div class="hero-text">
+          <h1 class="hero-greet">Greetings.</h1>
+          <h1 class="hero-introduction">
+            I am
+            <span class="name">
+              <img src="assets/graphics/hero-D.svg" class="d-image" />on.
+            </span>
+          </h1>
+          <hr class="hero-line" />
+          <h2 class="hero-sub">a computer science student.</h2>
+          <div class="hero-buttons">
+            <a class="hero-button" href="/resources.html">Resources</a>
+            <a class="hero-button" href="#about">About Me</a>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <img
+            class="hero-string"
+            src="assets/graphics/hero-strings-large.svg"
+            alt="Red Strings Graphics"
+          />
+        </div>
+      </div>
+      <div id="about">
+        <img
+          class="about-string"
+          src="assets/graphics/about-string.svg"
+          alt="Red Strings Graphics"
+        />
+        <div class="about-container">
+          <h2>ABOUT</h2>
+          <div class="about-text">
+            <div class="about-content">
+              <h3 class="about-content-title">My Self</h3>
+              <img
+                class="about-underline-1"
+                src="assets/graphics/underline-2-1.svg"
+                alt="Scribble Line Graphics"
+              />
+              <p class="about-content-body">
+                Hello! I am Don Victor Idos, a computer science student in Asia
+                Pacific College. I enjoy programming and building projects,
+                primarily web related stuffs, but I also take interest in web
+                design and game development.
+              </p>
+            </div>
+
+            <div class="about-content">
+              <h3 class="about-content-title">My Experience</h3>
+
+              <img
+                src="assets/graphics/underline-2-2.svg"
+                alt="Scribble Line Graphics"
+                class="about-underline-2"
+              />
+              <p class="about-content-body">
+                I have been able to build and design a number of websites,
+                mainly portfolios, blog page, and landing page. Though my
+                experience isn't limited to the front-end side of things, as I
+                have also delved into the development of backend systems.
+              </p>
+            </div>
+
+            <div class="about-content">
+              <h3 class="about-content-title">My Plans</h3>
+              <img
+                src="assets/graphics/underline-2-3.svg"
+                alt=" Scribble Line Graphics"
+                class="about-underline-3"
+              />
+              <p class="about-content-body">
+                I'm working towards becoming a web developer, preferably in the
+                front-end. Though, I'm still open to exploring other paths in
+                tech as I develop my skills and discover what I'm most
+                passionate about.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gallery">
+        <div class="gallery-content">
+          <img
+            class="gallery-string"
+            src="assets/graphics/gallery-string.svg"
+            alt=""
+          />
+          <h2>GALLERY</h2>
+          <div class="gallery-images">
+            <div class="gallery-cont-1">
+              <div class="img-cont-1">
+                <img alt="Picture of Don" v-bind:src="urls[0]" />
+              </div>
+              <div class="img-cont-2">
+                <img alt="Picture of Don" v-bind:src="urls[1]" />
+              </div>
+            </div>
+            <div class="gallery-cont-2">
+              <div class="img-cont-3">
+                <img alt="Picture of Don" v-bind:src="urls[2]" />
+              </div>
+              <div class="img-cont-4">
+                <img alt="Picture of Don" v-bind:src="urls[3]" />
+              </div>
+              <div class="img-cont-5">
+                <img alt="Picture of Don" v-bind:src="urls[4]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+        <div class="contact-content">
+          <h2>CONTACT</h2>
+          <form class="form-container" v-on:submit.prevent="submitForm">
+            <div class="personal-info">
+              <div class="personal-input full-name">
+                <label for="fullName">Full Name</label>
+                <input
+                  placeholder="Carlo Collodi"
+                  id="fullName"
+                  type="text"
+                  v-model="fullName"
+                  required
+                />
+              </div>
+              <div class="personal-input email">
+                <label for="email">Email Address</label>
+                <input
+                  placeholder="example@gmail.com"
+                  id="email"
+                  type="email"
+                  v-model="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="message-input">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder="Hello, I would like to ask about..."
+                v-model="message"
+                required
+              ></textarea>
+            </div>
+            <div class="button-container">
+              <button :disabled="sent" type="submit">Submit</button>
+              <p v-if="sent">Message sent!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 vyD Personal Website. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="scripts/vue.js"></script>
+  </body>
+</html>
